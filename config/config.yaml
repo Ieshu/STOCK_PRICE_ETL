@@ -1,0 +1,15 @@
+api:
+  stock_data_api:
+    url: "https://www.alphavantage.co/query?function=TIME_SERIES_INTRADAY&symbol=AAPL&interval=5min&apikey=EC896ASHLRDQIRZH"
+    token: "EC896ASHLRDQIRZH"
+
+database:
+  host: "localhost"
+  port: 5432
+  dbname: "stock_warehouse"
+  user: "user"
+  password: "password"
+
+logging:
+  level: "INFO"
+  file: "logs/etl.log"
